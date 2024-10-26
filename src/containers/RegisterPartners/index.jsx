@@ -52,7 +52,7 @@ function RegisterPartners() {
     <Container>
       <Title>Cadastrar Parceiros</Title>
       <Description>
-        Preencha as informações do novo Parceiro Connect Hub:
+        Preencha as informações do novo Parceiro BusinessFlow:
       </Description>
 
       <FormGroup>

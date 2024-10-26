@@ -1,67 +1,58 @@
-import styled from 'styled-components' 
+import styled from 'styled-components';
 
 export const Container = styled.div`
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 70px;
-  
+  background-color: #282c34;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  padding-top: 100px; /* Ajuste para evitar sobreposição com a navbar */
+  min-height: 100vh;
 
-    h1 {
-        margin-top: 12px;
-        color: #fff;
-        font-size: 50px;
-       font-style: inherit;
-    }
+  h1 {
+    font-size: 36px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 12px;
+    text-align: center;
+  }
 
-    p{ 
-        margin-top: 30px;
-        color: #fff;
-        font-size: 25px;
-        font-weight: bold;
-    }
+  p {
+    color: #dcdcdc;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+    text-align: center;
+    max-width: 80%;
+  }
 
-    h3 {
-        margin-top: 30px;
-        color: #fff;
-        font-size: 25px;
-    }
+  input {
+    width: 250px;
+    height: 35px;
+    margin-top: 10px;
+    padding-left: 15px;
+    border: 1px solid #555;
+    border-radius: 8px;
+    background-color: #3c3f41;
+    color: #ffffff;
+    font-size: 16px;
+  }
 
-    h4 {
-        margin-top: 30px;
-        color: #fff;
-        font-size: 20px;
-    }
+  button {
+    padding: 8px 16px;
+    margin: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 
-    input {
-        width: 200px;
-        height: 35px;
-        margin-top: 10px;
-        border: none;
-        border-radius: 10px;
-        padding-left: 30px;
+    &:hover {
+      background-color: #0056b3;
     }
-
-    button {
-        margin-top: 20px;
-        width: 100px;
-        height: 30px;
-        background-color: #dcdcdc;
-        border: none;
-        border-radius: 10px;
-        font-size: 17px;
-        font-weight: bold;
-        cursor: pointer;
-    }
-
-    select {
-        width: 200px;
-        height: 35px;
-        margin-top: 10px;
-        border: none;
-        border-radius: 10px;
-        padding-left: 30px;
-    }
-`
+  }
+`;

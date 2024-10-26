@@ -1,67 +1,91 @@
-import styled from 'styled-components' 
+import styled from "styled-components";
 
 export const Container = styled.div`
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 70px;
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #282c34;
+  min-height: 100vh;
+`;
 
-    h1 {
-        margin-top: 12px;
-        color: #fff;
-        font-size: 50px;
-       font-style: inherit;
-    }
+export const Title = styled.h1`
+  color: #ffffff;
+  font-size: 36px;
+  margin-bottom: 16px;
+  text-align: center;
+`;
 
-    p{ 
-        margin-top: 30px;
-        color: #fff;
-        font-size: 25px;
-        font-weight: bold;
-    }
+export const Description = styled.p`
+  color: #dcdcdc;
+  font-size: 18px;
+  margin-bottom: 24px;
+  text-align: center;
+`;
 
-    h3 {
-        margin-top: 30px;
-        color: #fff;
-        font-size: 25px;
-    }
+export const FormGroup = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  width: 100%;
+  max-width: 400px;
+`;
 
-    h4 {
-        margin-top: 30px;
-        color: #fff;
-        font-size: 20px;
-    }
+export const FormLabel = styled.label`
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 8px;
+`;
 
-    input {
-        width: 200px;
-        height: 35px;
-        margin-top: 10px;
-        border: none;
-        border-radius: 10px;
-        padding-left: 30px;
-    }
+export const FormInput = styled.input`
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #333;
+  font-size: 16px;
 
-    button {
-        margin-top: 20px;
-        width: 100px;
-        height: 30px;
-        background-color: #dcdcdc;
-        border: none;
-        border-radius: 10px;
-        font-size: 17px;
-        font-weight: bold;
-        cursor: pointer;
-    }
+  &:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+`;
 
-    select {
-        width: 200px;
-        height: 35px;
-        margin-top: 10px;
-        border: none;
-        border-radius: 10px;
-        padding-left: 30px;
-    }
-`
+export const FormSelect = styled.select`
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #333;
+  font-size: 16px;
+
+  &:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+`;
+
+export const SubmitButton = styled.button`
+  width: 100%;
+  max-width: 200px;
+  height: 40px;
+  margin-top: 24px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+`;
