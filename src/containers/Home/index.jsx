@@ -25,14 +25,14 @@ function Home() {
 
   return (
     <Container>
-      <h1>CONNECT AGOSTINHO</h1>
+      <h1>BusinessFlow</h1>
       {username && <p>Olá, {username}!</p>}
       <p>Bem-Vindo(a) ao seu local de Gerenciamento de Parceiros e Empresas</p>
       <h3>Sobre o Sistema:</h3>
       <h4>
         Desenvolvido em React JS, esse é o sistema perfeito para cadastrar,{" "}
         <br />
-        editar e visualizar os parceiros e empresas da Connect AGOSTINHO.
+        editar e visualizar os parceiros e empresas da BusinessFlow.
       </h4>
     </Container>
   );

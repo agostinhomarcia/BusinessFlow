@@ -46,7 +46,7 @@ function Login() {
     <Container>
       <ToastContainer />
       <img src={Logo} alt="logo" />
-      <h1>Login - Conect Hub</h1>
+      <h1>Login - BusinessFlow</h1>
       <p>Controle de Gestão de Empresas e Parceiros</p>
       <h3>Insira seu Nome de Usuário:</h3>
       <input
