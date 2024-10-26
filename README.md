@@ -6,9 +6,9 @@
 
 Para fazer login utilize os dados:
 
-Nome de usuário: person (tudo minúsculo)
+Nome de usuário: admin (tudo minúsculo)
 
-Senha: senha123 (tudo minúsculo)
+Senha: 123456
 
 Marque o checkbox Manter Conectado para salvar o nome de usuário nos cookies!
 
