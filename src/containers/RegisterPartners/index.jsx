@@ -10,6 +10,8 @@ import {
   Description,
 } from "./styles";
 import axios from "axios";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer, toast } from "react-toastify";
 
 function RegisterPartners() {
   const [partnerData, setPartnerData] = useState({
@@ -33,7 +35,7 @@ function RegisterPartners() {
         "https://644060ba792fe886a88de1b9.mockapi.io/v1/test/partners",
         partnerData
       );
-      alert("Parceiro cadastrado com sucesso!");
+      toast.success("Parceiro cadastrado com sucesso!");
       setPartnerData({
         name: "",
         urlDoc: "",
@@ -42,7 +44,7 @@ function RegisterPartners() {
       });
     } catch (error) {
       console.error("Erro ao cadastrar parceiro:", error);
-      alert(
+      toast.error(
         "Erro ao cadastrar parceiro. Verifique o console para mais detalhes."
       );
     }
@@ -50,6 +52,7 @@ function RegisterPartners() {
 
   return (
     <Container>
+      <ToastContainer />
       <Title>Cadastrar Parceiros</Title>
       <Description>
         Preencha as informações do novo Parceiro BusinessFlow:

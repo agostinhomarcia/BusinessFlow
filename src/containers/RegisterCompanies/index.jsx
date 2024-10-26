@@ -10,6 +10,8 @@ import {
   SubmitButton,
 } from "./styles";
 import axios from "axios";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer, toast } from "react-toastify";
 
 function RegisterCompanies() {
   const [companiesData, setCompaniesData] = useState({
@@ -32,7 +34,7 @@ function RegisterCompanies() {
         "https://655cf25525b76d9884fe3153.mockapi.io/v1/external-companies",
         companiesData
       );
-      alert("Empresa cadastrada com sucesso!");
+      toast.success("Empresa cadastrada com sucesso!");
       setCompaniesData({
         companyName: "",
         collaboratorsCount: "",
@@ -40,12 +42,13 @@ function RegisterCompanies() {
       });
     } catch (error) {
       console.error("Erro ao cadastrar Empresa:", error);
-      alert("Erro ao cadastrar Empresa. Tente novamente.");
+      toast.error("Erro ao cadastrar Empresa. Tente novamente.");
     }
   };
 
   return (
     <Container>
+      <ToastContainer />
       <Title>Cadastrar Empresas</Title>
       <Description>
         Preencha as informações da nova Empresa Externa BusinessFlow:

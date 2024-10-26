@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import TableWithPagination from "./TableWithPagination";
 import { Container } from "./styles";
 import axios from "axios";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer, toast } from "react-toastify";
 
 function ViewPartners() {
   const [companies, setCompanies] = useState([]);
@@ -24,11 +26,13 @@ function ViewPartners() {
         await axios.delete(
           `https://644060ba792fe886a88de1b9.mockapi.io/v1/test/partners/${id}`
         );
-        alert("Item excluído com sucesso!");
+        toast.success("Item excluído com sucesso!");
         setCompanies(companies.filter((company) => company.id !== id));
       } catch (error) {
         console.error("Erro ao excluir item:", error);
-        alert("Erro ao excluir item. Verifique o console para mais detalhes.");
+        toast.error(
+          "Erro ao excluir item. Verifique o console para mais detalhes."
+        );
       }
     }
   };
@@ -44,12 +48,12 @@ function ViewPartners() {
         updatedData
       );
       console.log("Resposta da atualização:", response.data);
-      alert("Empresa atualizada com sucesso!");
+      toast.success("Empresa atualizada com sucesso!");
       setEditedCompanyId(null);
       window.location.reload();
     } catch (error) {
       console.error("Erro ao atualizar empresa:", error);
-      alert(
+      toast.error(
         "Erro ao atualizar empresa. Verifique o console para mais detalhes."
       );
     }
@@ -68,6 +72,7 @@ function ViewPartners() {
 
   return (
     <Container>
+      <ToastContainer />
       <h1>Visualizar Parceiros</h1>
       <p>Lista de Parceiros cadastrados na BusinessFlow.</p>
       <TableWithPagination

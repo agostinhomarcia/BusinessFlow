@@ -1,6 +1,8 @@
 import { Container } from "./styles";
 import Logo from "../../assets/Logo.png";
 import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Login() {
   const [username, setUsername] = useState("");
@@ -23,7 +25,7 @@ function Login() {
         window.location.href = "/Home";
       }
     } else {
-      alert("Nome de usuário ou senha incorretos");
+      toast.error("Nome de usuário ou senha incorretos");
     }
   };
 
@@ -42,6 +44,7 @@ function Login() {
 
   return (
     <Container>
+      <ToastContainer />
       <img src={Logo} alt="logo" />
       <h1>Login - Conect Hub</h1>
       <p>Controle de Gestão de Empresas e Parceiros</p>
