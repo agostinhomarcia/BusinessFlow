@@ -26,6 +26,7 @@ export const Container = styled.div`
 
     h3 {
         margin-top: 25px;
+        color: #fff;
     }
 
     input {
@@ -36,7 +37,10 @@ export const Container = styled.div`
         border-radius: 10px;
         padding-left: 30px;
     }
-
+    label{
+        color: #fff;
+        margin-top: 10px;
+    }
 
     button {
         margin-top: 20px;
