@@ -18,11 +18,13 @@ React.js | styled-components | vite | vercel | Javascript, tabela com paginaçã
 
 Conexão ao backend via Axios dos métodos `get` | `post` | `put` | `delete`.
 
-`Listar tudo - GET /`
-`Listar um por id - GET /:id`
-`Cadastrar um parceiro - POST - /`
-`Atualizar um parceiro - PUT - /:id`
-`Deletar um parceiro - DELETE - /:id `
+**Endpoints**:
+
+- `GET /` - Listar todos
+- `GET /:id` - Listar por ID
+- `POST /` - Cadastrar parceiro
+- `PUT /:id` - Atualizar parceiro
+- `DELETE /:id` - Deletar parceiro
 
 ## 🔍 Como rodar aplicação na sua máquina? 
 
