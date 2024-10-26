@@ -10,7 +10,7 @@ function Login() {
   const [keepLoggedIn, setKeepLoggedIn] = useState(false);
 
   const handleLogin = () => {
-    if (username === "person" && password === "senha123") {
+    if (username === "admin" && password === "123456") {
       if (keepLoggedIn) {
         document.cookie = `username=${username}; expires=${new Date(
           Date.now() + 7 * 24 * 60 * 60 * 1000
