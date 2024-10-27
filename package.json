@@ -18,7 +18,8 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.0",
     "react-toastify": "^10.0.6",
-    "styled-components": "^6.1.10"
+    "styled-components": "^6.1.10",
+    "yarn": "^1.22.22"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
