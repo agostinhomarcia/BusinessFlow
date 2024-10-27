@@ -29,6 +29,26 @@ export const Table = styled.table`
   tr:nth-child(even) {
     background-color: #f9f9f9;
   }
+
+  @media (max-width: 768px) {
+    th, td {
+      padding: 8px;
+      font-size: 14px;
+    }
+
+    th {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
+    
+    th, td {
+      font-size: 12px;
+      padding: 6px;
+    }
+  }
 `;
 
 export const PaginationContainer = styled.div`
@@ -40,6 +60,19 @@ export const PaginationContainer = styled.div`
   span {
     margin: 0 10px;
     font-weight: bold;
+  }
+
+  @media (max-width: 768px) {
+    span {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    span {
+      font-size: 12px;
+      margin: 0 5px;
+    }
   }
 `;
 
@@ -57,6 +90,17 @@ export const EditRow = styled.tr`
     border-radius: 5px;
     background-color: #f5f8fa;
     color: #222;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      font-size: 14px;
+    }
+
+    @media (max-width: 480px) {
+      width: 100%;
+      font-size: 12px;
+      padding: 4px;
+    }
   }
 `;
 
@@ -74,6 +118,16 @@ export const Button = styled.button`
 
   &:hover {
     background-color: #0056b3;
+  }
+
+  @media (max-width: 768px) {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 4px 8px;
+    font-size: 12px;
   }
 `;
 

@@ -7,7 +7,7 @@ export const Container = styled.div`
   align-items: center;
   padding: 20px;
   min-height: 100vh;
-  background-color: #282c34; /* Fundo escuro */
+  background-color: #282c34;
 
   h1 {
     color: #ffffff;
@@ -15,6 +15,14 @@ export const Container = styled.div`
     font-weight: bold;
     margin-top: 12px;
     text-align: center;
+
+    @media (max-width: 768px) {
+      font-size: 28px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 24px;
+    }
   }
 
   p {
@@ -24,6 +32,16 @@ export const Container = styled.div`
     margin-top: 20px;
     text-align: center;
     max-width: 80%;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+      max-width: 90%;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 14px;
+      max-width: 100%;
+    }
   }
 
   input {
@@ -36,6 +54,16 @@ export const Container = styled.div`
     background-color: #3c3f41;
     color: #ffffff;
     font-size: 16px;
+
+    @media (max-width: 768px) {
+      width: 180px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 480px) {
+      width: 160px;
+      font-size: 13px;
+    }
   }
 
   button {
@@ -53,6 +81,16 @@ export const Container = styled.div`
     &:hover {
       background-color: #0056b3;
     }
+
+    @media (max-width: 768px) {
+      padding: 6px 12px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 480px) {
+      padding: 5px 10px;
+      font-size: 13px;
+    }
   }
 
   select {
@@ -65,5 +103,15 @@ export const Container = styled.div`
     background-color: #3c3f41;
     color: #ffffff;
     font-size: 16px;
+
+    @media (max-width: 768px) {
+      width: 180px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 480px) {
+      width: 160px;
+      font-size: 13px;
+    }
   }
 `;
