@@ -17,8 +17,7 @@ export const Container = styled.header`
     margin-right: 10px;
   }
 
-  /* Oculta o menu padrão em telas pequenas */
-  @media (max-width: 768px) {
+  @media (max-width: 1200px) {
     padding: 15px 20px;
   }
 `;
@@ -40,8 +39,7 @@ export const Menu = styled.ul`
   list-style: none;
   gap: 30px;
 
-  /* Estilos para quando o menu hamburguer está ativo em telas pequenas */
-  @media (max-width: 768px) {
+  @media (max-width: 1200px) {
     display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
     flex-direction: column;
     position: absolute;
@@ -72,7 +70,6 @@ export const Li = styled.li`
     }
   }
 
-  /* Reduz o tamanho da fonte em telas pequenas */
   @media (max-width: 768px) {
     font-size: 16px;
     margin: 8px 0;
@@ -85,8 +82,7 @@ export const HamburgerIcon = styled.div`
   color: #ffffff;
   cursor: pointer;
 
-  /* Exibe o ícone apenas em telas menores */
-  @media (max-width: 768px) {
+  @media (max-width: 1200px) {
     display: block;
   }
 `;
