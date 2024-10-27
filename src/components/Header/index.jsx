@@ -1,8 +1,15 @@
 import Logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
-import { Container, Menu, Li, LogoContainer } from "./styles";
+import { Container, Menu, Li, LogoContainer, HamburgerIcon } from "./styles";
+import { useState } from "react";
 
 function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <Container>
       <LogoContainer>
@@ -11,7 +18,12 @@ function Header() {
         </Link>
         <h2>BusinessFlow</h2>
       </LogoContainer>
-      <Menu>
+
+      <HamburgerIcon onClick={toggleMenu}>
+        ☰ {/* Ícone de menu hambúrguer */}
+      </HamburgerIcon>
+
+      <Menu isOpen={isMenuOpen}>
         <Li>
           <Link to="/Home">Home</Link>
         </Li>

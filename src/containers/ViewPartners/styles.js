@@ -7,7 +7,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  padding-top: 100px; /* Ajuste para evitar sobreposição com a navbar */
+  padding-top: 100px;
   min-height: 100vh;
 
   h1 {
