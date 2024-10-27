@@ -15,8 +15,8 @@ function Header() {
       <LogoContainer>
         <Link to="/Home">
           <img src={Logo} alt="logo-connect" />
+          <h2>BusinessFlow</h2>
         </Link>
-        <h2>BusinessFlow</h2>
       </LogoContainer>
 
       <HamburgerIcon onClick={toggleMenu}>

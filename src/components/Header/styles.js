@@ -26,6 +26,12 @@ export const LogoContainer = styled.div`
   display: flex;
   align-items: center;
 
+  a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
   h2 {
     color: #ffffff;
     font-size: 22px;
@@ -33,6 +39,7 @@ export const LogoContainer = styled.div`
     margin: 0;
   }
 `;
+
 
 export const Menu = styled.ul`
   display: flex;
