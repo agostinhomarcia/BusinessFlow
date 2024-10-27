@@ -8,6 +8,11 @@ export const Container = styled.div`
   padding: 20px;
   background-color: #282c34;
   min-height: 100vh;
+
+  /* Ajuste de padding para telas menores */
+  @media (max-width: 768px) {
+    padding: 10px;
+  }
 `;
 
 export const Title = styled.h1`
@@ -15,6 +20,15 @@ export const Title = styled.h1`
   color: #fff;
   font-size: 36px;
   text-align: center;
+
+  /* Tamanhos de fonte reduzidos para telas menores */
+  @media (max-width: 768px) {
+    font-size: 28px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 24px;
+  }
 `;
 
 export const Description = styled.p`
@@ -22,6 +36,15 @@ export const Description = styled.p`
   font-size: 18px;
   margin-bottom: 24px;
   text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+  }
 `;
 
 export const FormGroup = styled.div`
@@ -31,12 +54,24 @@ export const FormGroup = styled.div`
   margin-bottom: 16px;
   width: 100%;
   max-width: 400px;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
 `;
 
 export const FormLabel = styled.label`
   color: #fff;
   font-size: 16px;
   margin-bottom: 8px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 13px;
+  }
 `;
 
 export const FormInput = styled.input`
@@ -53,6 +88,16 @@ export const FormInput = styled.input`
     outline: none;
     border-color: #007bff;
   }
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    height: 35px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 13px;
+    height: 32px;
+  }
 `;
 
 export const FormSelect = styled.select`
@@ -68,6 +113,16 @@ export const FormSelect = styled.select`
   &:focus {
     outline: none;
     border-color: #007bff;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    height: 35px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 13px;
+    height: 32px;
   }
 `;
 
@@ -87,5 +142,16 @@ export const SubmitButton = styled.button`
 
   &:hover {
     background-color: #0056b3;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    font-size: 15px;
+    height: 38px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+    height: 35px;
   }
 `;
